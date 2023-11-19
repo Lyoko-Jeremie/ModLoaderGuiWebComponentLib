@@ -1,0 +1,39 @@
+{
+  "name": "GuiWebComponentLib",
+  "version": "1.0.0",
+  "styleFileList": [
+  ],
+  "scriptFileList_earlyload": [
+  ],
+  "scriptFileList_inject_early": [
+    "dist/GuiWebComponentLib.js"
+  ],
+  "scriptFileList_preload": [
+  ],
+  "scriptFileList": [
+  ],
+  "tweeFileList": [
+  ],
+  "imgFileList": [
+  ],
+  "imgFileReplaceList": [
+  ],
+  "additionFile": [
+    "README.md",
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js",
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js.map",
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/polyfills.js",
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/polyfills.js.map"
+  ],
+  "additionBinaryFile": [
+    "EsModuleStarterConfig.json5"
+  ],
+  "addonPlugin": [
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "ModLoader",
+      "version": "^2.7.5"
+    }
+  ]
+}
