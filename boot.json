@@ -19,14 +19,13 @@
   "imgFileReplaceList": [
   ],
   "additionFile": [
-    "README.md",
-    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js",
-    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js.map",
-    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/polyfills.js",
-    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/polyfills.js.map"
+    "README.md"
   ],
   "additionBinaryFile": [
     "EsModuleStarterConfig.json5"
+  ],
+  "additionDir": [
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser"
   ],
   "addonPlugin": [
   ],
