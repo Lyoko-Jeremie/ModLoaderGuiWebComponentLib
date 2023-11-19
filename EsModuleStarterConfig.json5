@@ -1,6 +1,9 @@
 {
   jsFileList: [
     "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/polyfills.js",
-    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js",
+//    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser/main.js",
+  ],
+  "includeDir": [
+    "NgGuiWebComponentLib/dist/ng-gui-web-component-lib/browser"
   ]
 }
