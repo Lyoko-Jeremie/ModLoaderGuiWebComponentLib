@@ -7,6 +7,8 @@
     "======================0": "",
     "ng:start": "yarn workspace ng-gui-web-component-lib run start",
     "ng:build": "yarn workspace ng-gui-web-component-lib run build",
+    "ng:watch": "yarn workspace ng-gui-web-component-lib run watch",
+    "types:w": "yarn workspace ng-gui-web-component-lib run types:w",
     "======================1": "",
     "ts:w": "tsc -w -p ./src_boot/tsconfig.json",
     "webpack:w": "webpack -w -c ./webpack.config.js",

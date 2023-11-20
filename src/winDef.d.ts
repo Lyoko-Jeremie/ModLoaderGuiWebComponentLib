@@ -10,5 +10,8 @@ declare global {
         jQuery: jQuery;
 
         modGuiWebComponentLib: GuiWebComponentLib;
+
+        modNgGuiWebComponentLib: NgGuiWebComponentLibBoot;
+        modNgGuiWebComponentLibBootstrapFactory: () => Promise<NgGuiWebComponentLibBoot>;
     }
 }

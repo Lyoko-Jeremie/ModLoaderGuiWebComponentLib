@@ -1,0 +1,43 @@
+<!--<button [swal]="['Oops!', 'This is not implemented yet :/', 'warning']">-->
+<!--  Do it!-->
+<!--</button>-->
+<!--<swal-->
+<!--  #showSwal-->
+<!--  title="show {{active}}?"-->
+<!--  icon="question"-->
+<!--  [showCancelButton]="true"-->
+<!--  [focusCancel]="true"-->
+<!--  (confirm)="toggle()"-->
+<!--&gt;-->
+<!--  <ng-container *swalPortal="swalTargets.content">-->
+<!--    <app-beauty-selector-addon (showChange)="debug($event)"></app-beauty-selector-addon>-->
+<!--  </ng-container>-->
+<!--</swal>-->
+<!--<button [swal]="showSwal">-->
+<!--  Do it 2!-->
+<!--</button>-->
+
+<button class="btn btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<!--<hr/>-->
+
+<!--<pre>{{ closeResult }}</pre>-->
+
+<div #modalHostElement></div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title"
+        id="modal-basic-title">{{StringTable.title + '[v' + guiWclRef.ref.modLoaderVersion + ']'}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <app-beauty-selector-addon (showChange)="debug($event)"></app-beauty-selector-addon>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-light" style="margin-right: auto;" (click)="modal.close('Save click')">
+      Save
+    </button>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NgGuiWebComponentLib</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<ng-gui-web-component-lib-app-component></ng-gui-web-component-lib-app-component>
+<!--<script src="../out-tsc/app/NgGuiWebComponentLib/src/MookGuiWebComponentLib.js" type="module"></script>-->
+<script>
+  class MookLogWrapper {
+    log(s) {
+      console.log(s);
+    }
+    warn(s) {
+      console.warn(s);
+    }
+    error(s) {
+      console.error(s);
+    }
+  }
+  class MookGuiWebComponentLib {
+    constructor() {
+      this.logger = new MookLogWrapper();
+      this.modName = 'AMod';
+    }
+    get modLoaderVersion() {
+      return "1.2.3";
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', async () => {
+    window.modGuiWebComponentLib = new MookGuiWebComponentLib();
+    await window.modNgGuiWebComponentLibBootstrapFactory();
+    await window.modNgGuiWebComponentLib.init();
+  });
+</script>
+</body>
+</html>
