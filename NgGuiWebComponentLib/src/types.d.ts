@@ -3,7 +3,9 @@ import type {NgElement} from "@angular/elements";
 import type {AppComponent} from "./app/app.component";
 import type {NgGuiWebComponentLibBoot} from "./main";
 import type {BeautySelectorAddonComponent} from "./beauty-selector-addon/beauty-selector-addon.component";
-import type {IGuiWebComponentLib} from "../../src/IGuiWebComponentLib";
+// import type {IGuiWebComponentLib} from "../../src/IGuiWebComponentLib";
+// import type {GuiWebComponentLib} from "@GuiWebComponentLib/GuiWebComponentLib";
+import type {IGuiWebComponentLib} from "@GuiWebComponentLib/IGuiWebComponentLib";
 
 declare global {
   interface HTMLElementTagNameMap {

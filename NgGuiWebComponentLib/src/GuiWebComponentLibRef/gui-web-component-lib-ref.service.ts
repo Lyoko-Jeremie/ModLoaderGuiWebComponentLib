@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
-import type {IGuiWebComponentLib} from "../../../src/IGuiWebComponentLib";
+// import type {GuiWebComponentLib} from "@GuiWebComponentLib/GuiWebComponentLib";
+import type {IGuiWebComponentLib} from "@GuiWebComponentLib/IGuiWebComponentLib";
 
 @Injectable({
   providedIn: null,
